@@ -108,7 +108,6 @@ Vue.component('listening', {
       this.arr = JSON.parse(localStorage.currentlyPlaying);
 
       //convert duration into seconds to compare amount of time left
-
       for (var i = 0; i < this.arr.length; i++) {
         var str = this.arr[i].duration;
         var p = str.split(':'),
