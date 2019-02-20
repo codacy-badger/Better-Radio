@@ -118,8 +118,6 @@ Vue.component('listening', {
           s += m * parseInt(p.pop(), 10);
           m *= 60;
         }
-
-
         var remaining = s - this.arr[i].progress;
         
         if (Math.floor(remaining / 60) <= 0) {
@@ -648,7 +646,7 @@ var instance = new Vue({
             }
           }
           //if no episode image is found, use the podcast image
-          //also a fix for 'The Dollop' podcast episode images not being suitable for use in this UI -- FIXME: make this less awful, is this going to just end up with a ton of shitty 'hotfixes' for every non-standard episode image size?
+          //also a fix for 'The Dollop' podcast episode images not being suitable for use in this UI
           if (episodeImage == undefined || this.results.collectionName == "The Dollop with Dave Anthony and Gareth Reynolds") {
             episodeImage = this.results.artworkUrl600; //use the podcast pic
           }
