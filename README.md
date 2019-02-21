@@ -11,6 +11,10 @@ Just clone the repo, and run it on your localhost or just open it as a local fil
 
 Create a new branch for any changes and create a pull request when done. We've got [Codacy](https://app.codacy.com/projects) running for code reviews and eventually some tests on every commit + pull request.
 
+## Testing
+Currently we have Codacy and Code Climate automated reviews on our commits/pull requests to keep our code less spaghetti-like.
+
+
 ### To do
 -  Set up an instance of Travis CI or CircleCI when we switch over to a Node.JS project using Vue CLI or Nuxt.
 -  Get a less shitty Code Quality score:
