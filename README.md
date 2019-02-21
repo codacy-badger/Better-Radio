@@ -13,7 +13,7 @@ Create a new branch for any changes and create a pull request when done. We've g
 
 ### To do
 -  Set up an instance of Travis CI or CircleCI when we switch over to a Node.JS project using Vue CLI or Nuxt.
--  Get a less shitty Codacy score: [![Codacy Badge](https://api.codacy.com/project/badge/Grade/758ea31dd43e47b9bf98b00dadcd8cca)](https://www.codacy.com/app/honsaar/Better-Radio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=honsaar/Better-Radio&amp;utm_campaign=Badge_Grade)
+-  Get a less shitty Code Quality score:
 
 ## Where it lives
 
