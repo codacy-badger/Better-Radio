@@ -14,9 +14,7 @@ Create a new branch for any changes and create a pull request when done. We've g
 ## Testing
 Currently we have Codacy and Code Climate automated reviews on our commits/pull requests to keep our code less spaghetti-like.
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef6459597a6044cd927bf5d2c7b92639)](https://www.codacy.com/app/honsaar/Better-Radio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=honsaar/Better-Radio&amp;utm_campaign=Badge_Grade)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/ed164294edbe15586610/maintainability)](https://codeclimate.com/github/honsaar/Better-Radio/maintainability)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef6459597a6044cd927bf5d2c7b92639)](https://www.codacy.com/app/honsaar/Better-Radio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=honsaar/Better-Radio&amp;utm_campaign=Badge_Grade)[![Maintainability](https://api.codeclimate.com/v1/badges/ed164294edbe15586610/maintainability)](https://codeclimate.com/github/honsaar/Better-Radio/maintainability)
 
 ### Deployment
 
