@@ -12,9 +12,9 @@ Just clone the repo, and run it on your localhost or just open it as a local fil
 Create a new branch for any changes and create a pull request when done. We've got [Codacy](https://app.codacy.com/projects) running for code reviews and eventually some tests on every commit + pull request.
 
 ## Testing
-Currently we have Codacy and Code Climate automated reviews on our commits/pull requests to keep our code less spaghetti-like.
+Currently we have Codacy automated reviews on our commits/pull requests to keep our code less spaghetti-like.
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef6459597a6044cd927bf5d2c7b92639)](https://www.codacy.com/app/honsaar/Better-Radio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=honsaar/Better-Radio&amp;utm_campaign=Badge_Grade)[![Maintainability](https://api.codeclimate.com/v1/badges/ed164294edbe15586610/maintainability)](https://codeclimate.com/github/honsaar/Better-Radio/maintainability)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef6459597a6044cd927bf5d2c7b92639)](https://www.codacy.com/app/honsaar/Better-Radio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=honsaar/Better-Radio&amp;utm_campaign=Badge_Grade)
 
 ### Deployment
 
