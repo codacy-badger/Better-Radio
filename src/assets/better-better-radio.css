@@ -41,9 +41,12 @@
     text-decoration: none;
     letter-spacing: .025em;
     font-size: .875rem;
+    background-color: #fff;
+    color: #212529;
 }
 
-.neutral:hover i, img {
+.neutral:hover i,
+img {
     transform: translateY(-1px);
 }
 
@@ -65,4 +68,12 @@
     vertical-align: middle;
     margin-right: 0.5em;
     transition: all 0.25s ease;
+}
+
+code {
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .125);
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
