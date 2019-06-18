@@ -12,8 +12,7 @@
       >
         <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
       </svg>
-      <h4>{{title}}</h4>
-      <p>{{content}}</p>
+      <slot></slot>
     </div>
   </div>
 </template>

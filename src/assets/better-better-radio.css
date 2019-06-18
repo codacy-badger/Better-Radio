@@ -14,7 +14,7 @@
 }
 
 .neutral {
-    color: #212529;
+    color: #172b4d;
     border: none;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
@@ -23,26 +23,24 @@
     letter-spacing: .025em;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 600;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: .875rem;
+    font-weight: 700;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: .75rem;
     transition: all 0.25s ease;
+    min-height: 40px;
 }
 
 .neutral:hover {
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     background-color: inherit;
-    color: inherit;
+    color: #172b4d;
     border: inherit;
     text-decoration: none;
     letter-spacing: .025em;
-    font-size: .875rem;
+    font-size: .75rem;
     background-color: #fff;
-    color: #212529;
 }
 
 .neutral:hover i,
@@ -55,7 +53,7 @@ img {
 }
 
 .btn i {
-    font-size: 1.5em;
+    font-size: 2em;
     vertical-align: middle;
     margin-right: 0.5em;
     transition: all 0.25s ease;
@@ -76,4 +74,63 @@ code {
     padding: 0.5em;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+.skewed-hero {
+    background: #172b4d;
+    color: #fff;
+    position: relative;
+    z-index: -1;
+}
+
+.skewed-hero:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(4deg);
+    transform-origin: 0%;
+    z-index: -1;
+}
+
+.dark-bg:hover {
+    color: white;
+}
+
+.gradient-default {
+    background: #1e3c72;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+.specialty {
+    min-width: 200px;
+}
+
+.subscribe[type="button"] {
+    background: #9381ff;
+    color: white;
+}
+
+.subscribed[type="button"] {
+    background: #f8f7ff;
+    color: #aaa7c0;
+}
+
+.unsubscribe[type="button"] {
+    color: white;
+}
+
+.tags {
+    margin-right: 0.4em;
+}
+
+.category {
+    background: #f8f7ff;
+    color: #aaa7c0;
 }
