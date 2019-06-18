@@ -27,7 +27,7 @@ export default {
  }
 
  .bg-warn {
-   background: linear-gradient(87deg,#fb6340 0,#fbb140 100%) !important;
+   background: linear-gradient(87deg,#f5365c 0,#f56036 100%) !important;
    color: white;
  }
 </style>

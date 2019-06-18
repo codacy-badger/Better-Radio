@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <router-view/>
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    </div>-->
   </div>
 </template>
 
 <style>
 @import "https://unicons.iconscout.com/release/v0.0.4/css/unicons.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #nav {
   padding: 30px;
