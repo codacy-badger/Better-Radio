@@ -183,3 +183,18 @@ code {
 .buttText {
     line-height: 3;
 }
+
+.website {
+    background: #5e72e4;
+    color: white;
+}
+
+.website:hover {
+    background: #5e72e4 !important;
+    color: white !important;
+}
+
+.website:active {
+    background: #5e72e4 !important;
+    color: white !important;
+}

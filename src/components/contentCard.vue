@@ -1,5 +1,5 @@
 /<template>
-     <div class="card contentCard shadows" :class="dark == 'true' ? 'dark-bg' : ''">
+     <div class="card contentCard shadows-static" :class="dark == 'true' ? 'dark-bg' : ''">
                       <div class="cardItems">
                       <slot></slot>
                       </div>

@@ -1,4 +1,5 @@
 <template>
+<a class="resultLink" href="#!">
   <contentCard class="podCard">
     <b-row>
       <b-col sm="4">
@@ -20,6 +21,7 @@
       </b-col>
     </b-row>
   </contentCard>
+</a>
 </template>
 
 <script>
@@ -98,4 +100,14 @@ export default {
   font-size: 0.75rem;
   font-weight: 700;
 }
+
+.resultLink:active > .podCard {
+    box-shadow: none !important;
+    transform: translateY(1px);
+}
+
+.resultLink:hover {
+    text-decoration: none;
+}
+
 </style>

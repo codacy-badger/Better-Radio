@@ -5,6 +5,8 @@
             <p>
               <strong>Hero</strong>
             </p>
+            <h1>Atoms</h1>
+            <p>Singular items that can fit together to build molecules, or otherwise is standalone content</p>
           </div>
         </div>
     <div class="container">
@@ -58,7 +60,7 @@
               </b-btn>
               <br>
               <br>
-              <p>Specialty Buttons</p>
+              <p>Subscription Buttons</p>
               <b-btn class="neutral dark-bg specialty">
                 <i class="uil uil-heart-medical"></i> <span class="buttText">Subscribe</span>
               </b-btn>
@@ -70,7 +72,7 @@
                 <i class="uil uil-times"></i> <span class="buttText">Unsubscribe</span>
               </b-btn>
               <br><br>
-              <p>Branded Buttons</p>
+              <p>Functional/Optional Buttons</p>
               <b-row>
               <b-col>
               <b-btn class="neutral patreon specialty">
@@ -86,6 +88,20 @@
               </b-col>
               </b-row>
               <br>
+              <b-row>
+              <b-col>
+              <b-btn class="neutral website specialty">
+                
+              <i class='uil uil-globe'></i><span class="buttText">Go to website</span>
+              </b-btn>
+              </b-col>
+
+              <b-col>
+
+              <p class="small" style="font-weight: 700; color: #aaa7c0; text-transform: uppercase;">Note: Used for direct linking to the podcast's website</p>
+              </b-col>
+              </b-row>
+              <br>
             </b-col>
           </b-row>
         </b-col>
@@ -93,8 +109,83 @@
       <br>
       <br>
 
+   
+
       <b-row>
         <b-col>
+          <p>
+            <strong>Card Wrappers</strong>
+          </p>
+
+          <br>
+          <b-row>
+            <b-col>
+              <contentCard>
+                <p>Content card with slottable content</p>
+              </contentCard>
+            </b-col>
+
+            <b-col>
+              <contentCard dark="true">
+                <p>Content card with slottable content</p>
+              </contentCard>
+            </b-col>
+
+            <b-col>
+              <contentCard>
+                <p>Content card with slottable content</p>
+              </contentCard>
+            </b-col>
+          </b-row>
+          <br>
+          <br>
+          <!-- <b-row>
+            <b-col>
+              <contentCard style="height: 600px;">Large card wrapper for larger pieces of content</contentCard>
+            </b-col>
+          </b-row> -->
+        </b-col>
+      </b-row>
+      <br>
+      <br>
+      <b-row>
+        <b-col>
+          <p>
+            <strong>Modals</strong>
+          </p>
+          <p>More complex items, usually built up from atoms or otherwise more complex.</p>
+          <b-btn class="neutral dark-bg">
+                <span class="buttText">Open Modal</span>
+              </b-btn>
+          <br><br>
+          <p>
+            <strong>Notifications</strong>
+           
+          </p>
+           <b-btn class="neutral">
+                <span class="buttText">Open Notification</span>
+              </b-btn>
+          <br><br>
+          <p>
+            <strong>Images</strong>
+          </p>
+          <br>
+          <p>Square Images</p>
+          <p>Rounded Images</p>
+        </b-col>
+      </b-row>
+
+         <b-row>
+        <b-col>
+          <h1>Molecules</h1>
+           <p>
+            <strong>Audio Player</strong>
+          </p>
+          <br>
+          <p>
+            <strong>Footer</strong>
+          </p>
+          <br>
           <p>
             <strong>Search Results</strong>
           </p>
@@ -209,64 +300,6 @@
             </div>
           </calloutCard>
           <br>
-          <br>
-        </b-col>
-      </b-row>
-
-      <b-row>
-        <b-col>
-          <p>
-            <strong>Card Wrappers</strong>
-          </p>
-
-          <br>
-          <b-row>
-            <b-col>
-              <contentCard>
-                <p>Content card with slottable content</p>
-              </contentCard>
-            </b-col>
-
-            <b-col>
-              <contentCard dark="true">
-                <p>Content card with slottable content</p>
-              </contentCard>
-            </b-col>
-
-            <b-col>
-              <contentCard>
-                <p>Content card with slottable content</p>
-              </contentCard>
-            </b-col>
-          </b-row>
-          <br>
-          <br>
-          <b-row>
-            <b-col>
-              <contentCard style="height: 600px;">Large card wrapper for larger pieces of content</contentCard>
-            </b-col>
-          </b-row>
-        </b-col>
-      </b-row>
-      <br>
-      <br>
-      <b-row>
-        <b-col>
-          <p>
-            <strong>Modals</strong>
-          </p>
-          <br>
-          <p>
-            <strong>Notifications</strong>
-          </p>
-          <br>
-          <p>
-            <strong>Images</strong>
-          </p>
-          <br>
-          <p>
-            <strong>Audio Player</strong>
-          </p>
           <br>
         </b-col>
       </b-row>
