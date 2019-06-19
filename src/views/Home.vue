@@ -15,49 +15,11 @@
             <strong>Featured Content Card</strong>
           </p>
           <heroCard
-            image="https://demos.creative-tim.com/argon-design-system/assets/img/theme/img-1-1200x1000.jpg"
+            image="https://images.pexels.com/photos/2061057/pexels-photo-2061057.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           >
             <h4>Featured Content</h4>
             <p>This card is used for featured or hero content</p>
           </heroCard>
-        </b-col>
-        <b-col>
-          <b-row>
-            <b-col>
-              <p>
-                <strong>Buttons</strong>
-              </p>
-              <p>Primary Buttons</p>
-              <b-btn class="neutral">
-                <i class="uil uil-github"></i> Github
-              </b-btn>
-              <b-btn class="neutral">
-                <i class="uil uil-google" style="color: #DB4437;"></i> Google
-              </b-btn>
-              <br>
-              <br>
-              <p>Secondary Buttons</p>
-              <b-btn class="neutral dark-bg">
-                <i class="uil uil-github"></i> Github
-              </b-btn>
-              <b-btn class="neutral dark-bg">
-                <i class="uil uil-google" style="color: #DB4437;"></i> Google
-              </b-btn>
-              <br>
-              <br>
-              <p>Specialty Buttons</p>
-              <b-btn class="neutral dark-bg specialty">
-                <i class="uil uil-heart-medical"></i> Subscribe
-              </b-btn>
-              <b-btn class="neutral subscribed specialty">
-                <i class="uil uil-heart"></i> Subscribed
-              </b-btn>
-
-              <b-btn class="neutral bg-warn unsubscribe specialty">
-                <i class="uil uil-times"></i> Unsubscribe
-              </b-btn>
-
-              <br>
               <br>
               <p>
                 <strong>Tags</strong>
@@ -71,6 +33,59 @@
                 <strong>New Notification Spot</strong>
               </p>
               <b-badge pill class="category tags bg-warn">&nbsp;</b-badge>
+        </b-col>
+        <b-col>
+          <b-row>
+            <b-col>
+              <p>
+                <strong>Buttons</strong>
+              </p>
+              <p>Primary Buttons</p>
+              <b-btn class="neutral">
+                <i class="uil uil-github"></i><span class="buttText"> Github</span>
+              </b-btn>
+              <b-btn class="neutral">
+                <i class="uil uil-google" style="color: #DB4437;"></i> <span class="buttText">Google</span>
+              </b-btn>
+              <br>
+              <br>
+              <p>Secondary Buttons</p>
+              <b-btn class="neutral dark-bg">
+                <i class="uil uil-github"></i> <span class="buttText">Github</span>
+              </b-btn>
+              <b-btn class="neutral dark-bg">
+                <i class="uil uil-google" style="color: #DB4437;"></i><span class="buttText"> Google</span>
+              </b-btn>
+              <br>
+              <br>
+              <p>Specialty Buttons</p>
+              <b-btn class="neutral dark-bg specialty">
+                <i class="uil uil-heart-medical"></i> <span class="buttText">Subscribe</span>
+              </b-btn>
+              <b-btn class="neutral subscribed specialty">
+                <i class="uil uil-heart"></i> <span class="buttText">Subscribed</span>
+              </b-btn>
+
+              <b-btn class="neutral bg-warn unsubscribe specialty">
+                <i class="uil uil-times"></i> <span class="buttText">Unsubscribe</span>
+              </b-btn>
+              <br><br>
+              <p>Branded Buttons</p>
+              <b-row>
+              <b-col>
+              <b-btn class="neutral patreon specialty">
+                
+              <img class="uil" src="../assets/patreon.svg"/><span class="buttText">Become a patron</span>
+              </b-btn>
+              </b-col>
+
+              <b-col>
+
+              <p class="small" style="font-weight: 700; color: #aaa7c0; text-transform: uppercase;">Note: Use the Patreon button to link directly to the Patreon page for the podcast</p>
+              <!-- Allowing direct links to podcasts allowing for people to quickly go support their favourite creators. Plan on adding more for any other creation support services as podcasts get flagged as having them. So far, this would be a manual process but there would be a possibility of automatically flagging those with Patreons somehow. -->
+              </b-col>
+              </b-row>
+              <br>
             </b-col>
           </b-row>
         </b-col>
@@ -238,7 +253,19 @@
       <b-row>
         <b-col>
           <p>
-            <strong>Modal Types</strong>
+            <strong>Modals</strong>
+          </p>
+          <br>
+          <p>
+            <strong>Notifications</strong>
+          </p>
+          <br>
+          <p>
+            <strong>Images</strong>
+          </p>
+          <br>
+          <p>
+            <strong>Audio Player</strong>
           </p>
           <br>
         </b-col>

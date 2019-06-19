@@ -41,6 +41,11 @@ export default {
 .podCard {
     margin-bottom: 1em;
     min-height: 3em;
+    transition: 0.2s ease;
+}
+
+.podCard:hover {
+    transform: translateY(-2px);
 }
 
 .podCol {

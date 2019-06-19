@@ -4,7 +4,7 @@
 }
 
 .shadows:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    box-shadow: 0 15px 25px rgba(50, 50, 93, .2), 0 5px 20px rgba(0, 0, 0, .1) !important;
     /* transform: translateY(-1rem); */
 }
 
@@ -29,11 +29,12 @@
     font-size: .75rem;
     transition: all 0.25s ease;
     min-height: 40px;
+    vertical-align: center;
 }
 
 .neutral:hover {
     transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .2), 0 3px 6px rgba(0, 0, 0, .1);
     background-color: inherit;
     color: #172b4d;
     border: inherit;
@@ -41,6 +42,13 @@
     letter-spacing: .025em;
     font-size: .75rem;
     background-color: #fff;
+}
+
+.neutral:active {
+    transform: translateY(1px);
+    background: #fff !important;
+    color: #172b4d !important;
+    box-shadow: none;
 }
 
 .neutral:hover i,
@@ -101,6 +109,12 @@ code {
     color: white;
 }
 
+.dark-bg:active {
+    color: white !important;
+    background: #172b4d !important;
+}
+
+
 .gradient-default {
     background: #1e3c72;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
@@ -110,6 +124,7 @@ code {
 
 .specialty {
     min-width: 200px;
+    min-height: 48px;
 }
 
 .subscribe[type="button"] {
@@ -121,10 +136,17 @@ code {
     background: #f8f7ff;
     color: #aaa7c0;
 }
+.subscribed:active {
+    transform: translateY(2px);
+    background: #f8f7ff !important;
+    color: #aaa7c0 !important;
+}
 
 .unsubscribe[type="button"] {
     color: white;
 }
+
+
 
 .tags {
     margin-right: 0.4em;
@@ -133,4 +155,31 @@ code {
 .category {
     background: #f8f7ff;
     color: #aaa7c0;
+}
+
+.patreon {
+    background: rgb(232, 91, 70);
+    color: white;
+}
+
+.patreon img {
+    padding-top: .7em;
+}
+
+.patreon:hover {
+    background: rgb(232, 91, 70);
+    color: white;
+}
+
+.patreon:active {
+    background: rgb(232, 91, 70) !important;
+    color: white !important;
+}
+
+.btn .uil {
+    float: left;
+}
+
+.buttText {
+    line-height: 3;
 }
