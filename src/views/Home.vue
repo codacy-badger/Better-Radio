@@ -6,7 +6,7 @@
               <strong>Hero</strong>
             </p>
             <h1>Atoms</h1>
-            <p>Singular items that can fit together to build molecules, or otherwise is standalone content</p>
+            <p>Singular items that can fit together to build molecules, or otherwise standalone content</p>
           </div>
         </div>
     <div class="container">
@@ -52,6 +52,7 @@
               <br>
               <br>
               <p>Secondary Buttons</p>
+               <p class="small" style="font-weight: 700; color: #aaa7c0; text-transform: uppercase;">Note: possibility of themeing secondary buttons based on Podcast 'color'? Also affects the default subscribe button.</p>
               <b-btn class="neutral dark-bg">
                 <i class="uil uil-github"></i> <span class="buttText">Github</span>
               </b-btn>
@@ -152,10 +153,20 @@
         <b-col>
           <p>
             <strong>Modals</strong>
+
+
+
           </p>
-          <p>More complex items, usually built up from atoms or otherwise more complex.</p>
+
+
+      <SweetModal modal-theme="dark" overlay-theme="dark" icon="success" ref="test">
+	      This is a success!
+      </SweetModal>
+          <br><br>
+
+          
           <b-btn class="neutral dark-bg">
-                <span class="buttText">Open Modal</span>
+                <span class="buttText" @click="openModal">Open Modal</span>
               </b-btn>
           <br><br>
           <p>
@@ -170,14 +181,28 @@
             <strong>Images</strong>
           </p>
           <br>
-          <p>Square Images</p>
+          <p>Square-ish Images</p>
+          <b-img class="shadows" rounded src="https://placeimg.com/200/200/nature"/>
+          <br><br>
           <p>Rounded Images</p>
+          <b-img class="shadows" rounded="circle" src="https://placeimg.com/200/200/animals"/>
+          <br><br>
+          <p><strong>Media Buttons</strong></p>
+          <p>Button for episode list</p>
+            <i class='uil uil-play-circle' style="font-size: 2em;"></i> &nbsp; &nbsp; <i class='uil uil-pause-circle' style="font-size: 2em;"></i>
+          <br><br>
+          <p>Media controls for audio player</p>
+          <span style="font-size: 2em"><i class='uil uil-backward'></i> <i class='uil uil-play' style="font-size: 1.2em;"></i><i class='uil uil-forward'></i></span>
+          <p>Show notes</p>
+            <i class='uil uil-notes' style="font-size: 1.2em;"></i>  <span class="small" style="font-weight: 700; text-transform: uppercase;">Episode notes</span>
+          <br><br>
         </b-col>
       </b-row>
-
+  <br><br><br><br>
          <b-row>
         <b-col>
           <h1>Molecules</h1>
+          <p>More complex items, usually built up from atoms or otherwise more complex.</p>
            <p>
             <strong>Audio Player</strong>
           </p>
@@ -206,26 +231,14 @@
           <p>
             <strong>Subscribed Items</strong>
           </p>
-          <b-row>
-            <b-col sm="12" md="6">
-              <searchResult/>
-            </b-col>
-            <b-col sm="12" md="6">
-              <searchResult/>
-            </b-col>
-            <b-col sm="12" md="6">
-              <searchResult/>
-            </b-col>
-            <b-col sm="12" md="6">
-              <searchResult/>
-            </b-col>
-            <b-col sm="12" md="6">
-              <searchResult/>
-            </b-col>
-            <b-col sm="12" md="6">
-              <searchResult/>
-            </b-col>
-          </b-row>
+              <podcast/>
+              <podcast/>
+              <podcast/>
+              <podcast/>
+              <podcast/>
+              <br><br>
+              <p><strong>Subscribed Item with new episodes</strong></p>
+              <podcast newEps='true' />
         </b-col>
       </b-row>
 
@@ -301,6 +314,8 @@
           </calloutCard>
           <br>
           <br>
+          <p>Audio Player</p>
+          <p>Podcast Info Card</p>
         </b-col>
       </b-row>
     </div>
@@ -313,6 +328,9 @@ import heroCard from "@/components/heroCard";
 import calloutCard from "@/components/calloutCard";
 import contentCard from "@/components/contentCard";
 import searchResult from "@/components/searchResult";
+import podcast from "@/components/podcast";
+import SweetModal from 'sweet-modal-vue/src/components/SweetModal.vue'
+
 
 export default {
   name: "home",
@@ -320,7 +338,15 @@ export default {
     heroCard,
     calloutCard,
     contentCard,
-    searchResult
+    searchResult,
+    podcast,
+    SweetModal
+  },
+  methods: {
+    openModal(){
+      console.log("AAAA");
+      this.$refs.test.open();
+    }
   }
 };
 </script>
