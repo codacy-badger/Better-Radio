@@ -105,6 +105,27 @@ code {
     z-index: -1;
 }
 
+.footer {
+    background: #f4f5f7;
+    color: black;
+    position: relative;
+    z-index: -1;
+}
+
+.footer:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(4deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
 .dark-bg:hover {
     color: white;
 }
@@ -201,4 +222,13 @@ code {
 .website:active {
     background: #5e72e4 !important;
     color: white !important;
+}
+
+.podProfile {
+    width: inherit !important;
+}
+
+hr {
+    max-width: 400px;
+    border-top: 1px solid rgba(0,0,80,.1);
 }

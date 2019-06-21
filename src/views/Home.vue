@@ -182,14 +182,7 @@
                 <span class="buttText">Open Error Modal</span>
               </b-btn>
           <br><br>
-          <p>
-            <strong>Notifications</strong>
-           
-          </p>
-           <b-btn class="neutral">
-                <span class="buttText">Open Notification</span>
-              </b-btn>
-          <br><br>
+     
           <p>
             <strong>Images</strong>
           </p>
@@ -205,7 +198,7 @@
             <i class='uil uil-play-circle' style="font-size: 2em;"></i> &nbsp; &nbsp; <i class='uil uil-pause-circle' style="font-size: 2em;"></i>
           <br><br>
           <p>Media controls for audio player</p>
-          <span style="font-size: 2em"><i class='uil uil-backward'></i> <i class='uil uil-play' style="font-size: 1.2em;"></i><i class='uil uil-forward'></i></span>
+          <span style="font-size: 2em"><i class='uil uil-backward'></i> <i class='uil uil-play' style="font-size: 1.2em;"></i> <i class='uil uil-pause' style="font-size: 1.2em;"></i><i class='uil uil-forward'></i></span><br><br>
           <p>Show notes</p>
             <i class='uil uil-notes' style="font-size: 1.2em;"></i>  <span class="small" style="font-weight: 700; text-transform: uppercase;">Episode notes</span>
           <br><br>
@@ -216,13 +209,6 @@
         <b-col>
           <h1>Molecules</h1>
           <p>More complex items, usually built up from atoms or otherwise more complex.</p>
-           <p>
-            <strong>Audio Player</strong>
-          </p>
-          <br>
-          <p>
-            <strong>Footer</strong>
-          </p>
           <br>
           <p>
             <strong>Search Results</strong>
@@ -256,7 +242,7 @@
       </b-row>
 
     <br><br>
-
+      <p>Episode Listing</p>
       <br>
       <br>
       <b-row>
@@ -328,10 +314,36 @@
           <br>
           <br>
           <p>Audio Player</p>
+          <br><br>
           <p>Podcast Info Card</p>
+          <br>
+
+            <contentCard style="height: 300px;margin-bottom: 4em;">
+              <div class="container">
+                <div style="text-align: center; margin-top: -4em;">
+                 <b-img class="shadows podProfile" rounded="circle" src="https://placeimg.com/180/180/animals"/>
+                 <br><br>
+                 <h2 class="podcastTitle">The Dollop</h2>
+                 <hr>
+                 <br>
+                 <p>Comedians Dave Anthony and Gareth Reynolds picks a subject from history and examine it.</p>
+                 </div>
+              </div>
+              </contentCard>
+          <br>
+
         </b-col>
       </b-row>
     </div>
+
+          <div class="footer" style="height: 400px;">
+          <div class="container" style="padding-top: 2em;">
+            <p>
+              <strong>Footer</strong>
+            </p>
+           
+          </div>
+        </div>
   </div>
 </template>
 
