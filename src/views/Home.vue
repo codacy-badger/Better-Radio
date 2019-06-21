@@ -171,15 +171,15 @@
           <br><br>
 
           
-          <b-btn class="neutral dark-bg">
-                <span class="buttText" @click="openModal('test')">Open Dark Modal</span>
+          <b-btn class="neutral dark-bg" @click="openModal('test')">
+                <span class="buttText">Open Dark Modal</span>
               </b-btn>
 
-              <b-btn class="neutral">
-                <span class="buttText" @click="openModal('light')">Open Light Modal</span>
+              <b-btn class="neutral" @click="openModal('light')">
+                <span class="buttText">Open Light Modal</span>
               </b-btn>
-              <b-btn class="neutral bg-warn">
-                <span class="buttText" @click="openModal('error')">Open Error Modal</span>
+              <b-btn class="neutral bg-warn" @click="openModal('error')">
+                <span class="buttText">Open Error Modal</span>
               </b-btn>
           <br><br>
           <p>
@@ -357,7 +357,6 @@ export default {
   },
   methods: {
     openModal(reference){
-      console.log(reference);
       this.$refs[reference].open();
     }
   }
