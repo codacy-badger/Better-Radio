@@ -146,6 +146,10 @@ code {
     color: white;
 }
 
+.bg-warn[type="button"]:hover {
+    color: white !important;
+}
+
 
 
 .tags {

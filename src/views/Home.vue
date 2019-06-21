@@ -162,11 +162,24 @@
       <SweetModal modal-theme="dark" overlay-theme="dark" icon="success" ref="test">
 	      This is a success!
       </SweetModal>
+      <SweetModal modal-theme="light" overlay-theme="light" icon="success" ref="light">
+	      This is a success!
+      </SweetModal>
+      <SweetModal modal-theme="light" overlay-theme="light" icon="error" ref="error">
+	      Error
+      </SweetModal>
           <br><br>
 
           
           <b-btn class="neutral dark-bg">
-                <span class="buttText" @click="openModal">Open Modal</span>
+                <span class="buttText" @click="openModal('test')">Open Dark Modal</span>
+              </b-btn>
+
+              <b-btn class="neutral">
+                <span class="buttText" @click="openModal('light')">Open Light Modal</span>
+              </b-btn>
+              <b-btn class="neutral bg-warn">
+                <span class="buttText" @click="openModal('error')">Open Error Modal</span>
               </b-btn>
           <br><br>
           <p>
@@ -343,9 +356,9 @@ export default {
     SweetModal
   },
   methods: {
-    openModal(){
-      console.log("AAAA");
-      this.$refs.test.open();
+    openModal(reference){
+      console.log(reference);
+      this.$refs[reference].open();
     }
   }
 };
