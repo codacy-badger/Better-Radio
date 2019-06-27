@@ -5,18 +5,18 @@
       <b-col sm="4">
         <div
           class="resultImage"
-          style="background-image: url('https://is3-ssl.mzstatic.com/image/thumb/Music123/v4/4a/39/bf/4a39bf3f-2d4d-52a1-4266-4a1e7b0ec723/source/600x600bb.jpg')"
+          :style="{ backgroundImage: 'url(' + image + ')' }"
         ></div>
       </b-col>
 
       <b-col sm="8" class="podCol">
         <div style="padding: 1em;">
-          <span class="podTitle">The Dollop with Dave Anthony and Gareth Reynolds</span>
+          <span class="podTitle">{{title}}</span>
           <br>
-          <span class="author">Dave Anthony and Gareth Reynolds</span>
+          <span class="author">{{author}}</span>
           <br>
-          <b-badge pill class="category tags">Comedy</b-badge>
-          <b-badge pill class="category tags">History</b-badge>
+          <!-- <b-badge pill class="category tags">Comedy</b-badge>
+          <b-badge pill class="category tags">History</b-badge> -->
         </div>
       </b-col>
     </b-row>
@@ -28,7 +28,7 @@
 import contentCard from "@/components/contentCard";
 
 export default {
-  props: ["title", "author", "categories"],
+  props: ["title", "author", "categories", "image"],
   components: {
     contentCard
   }
@@ -38,6 +38,7 @@ export default {
 <style>
 .podCard > .cardItems {
   padding: 0 !important;
+  min-height: 104px;
 }
 
 .podCard {
@@ -55,7 +56,7 @@ export default {
 }
 
 .resultImage {
-  min-height: 100%;
+  min-height: 104px;
   width: 100%;
   background-size: contain;
   border-radius: 0.25rem 0 0 0.25rem;

@@ -10,12 +10,12 @@
 
 <style>
 @import "https://unicons.iconscout.com/release/v0.0.4/css/unicons.css";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap");
 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 #nav {
   padding: 30px;

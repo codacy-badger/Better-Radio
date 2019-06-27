@@ -156,6 +156,7 @@ code {
 .subscribed[type="button"] {
     background: #f8f7ff;
     color: #aaa7c0;
+    box-shadow: none !important;
 }
 .subscribed:active {
     transform: translateY(2px);
@@ -189,6 +190,7 @@ code {
 
 .patreon img {
     padding-top: .7em;
+    max-width: 20px;
 }
 
 .patreon:hover {
