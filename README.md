@@ -1,6 +1,8 @@
 # Better-Radio
 Better Radio, but betterer
 
+[![buddy pipeline](https://app.buddy.works/honsyb/better-radio/pipelines/pipeline/194816/badge.svg?token=a43840402f97e7c9fa05242fc3c3d4033993f6e0b49bc1a866e11e89ef0c9e2d "buddy pipeline")](https://app.buddy.works/honsyb/better-radio/pipelines/pipeline/194816)
+
 ## Requirements
 Node.js
 
